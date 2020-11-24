@@ -9,13 +9,14 @@ import SwiftUI
 
 final class PodcastGridViewModel: ObservableObject {
     var selectedPodcast: Podcast? {
-        didSet {
-            isShowingDetailView = true
-        }
+        didSet { isShowingDetailView = true }
     }
     
     @Published var isShowingDetailView = false
     
-    
+    let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
     
 }

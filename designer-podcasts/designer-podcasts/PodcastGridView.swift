@@ -10,11 +10,7 @@ import SwiftUI
 struct PodcastGridView: View {
     
     @StateObject var viewModel = PodcastGridViewModel()
-    
-    let columns: [GridItem] = [
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
+
     
     var body: some View {
         
@@ -23,7 +19,7 @@ struct PodcastGridView: View {
             ScrollView {
                 Spacer()
                 
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: viewModel.columns) {
                     ForEach(MockData.podcasts) { podcast in
                         PodcastTitleView(podcast: podcast)
                             .onTapGesture {

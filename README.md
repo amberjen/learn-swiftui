@@ -13,7 +13,7 @@ Documenting my journey of learning SwiftUI.
 
 ## 02 Podcasts for Designers 👩‍🎨🎨
 
-<img src="./screenshots/02-podcasts.png" width="640px" alt="app screenshot of project 2">
+<img src="./screenshots/02-podcasts.png" width="680px" alt="app screenshot of project 2">
 
 - Grid 
 - Basic Model-View-View Model (MVVM)
