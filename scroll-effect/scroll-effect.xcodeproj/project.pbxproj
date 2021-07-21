@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96174BD226A7D0F9003326CA /* scroll_effectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96174BD126A7D0F9003326CA /* scroll_effectApp.swift */; };
+		96174BD426A7D0F9003326CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96174BD326A7D0F9003326CA /* ContentView.swift */; };
+		96174BD626A7D0FC003326CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96174BD526A7D0FC003326CA /* Assets.xcassets */; };
+		96174BD926A7D0FC003326CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96174BD826A7D0FC003326CA /* Preview Assets.xcassets */; };
+		96174BE726A7D2A2003326CA /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96174BE126A7D2A2003326CA /* Poppins-Light.ttf */; };
+		96174BE826A7D2A2003326CA /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96174BE226A7D2A2003326CA /* Poppins-Medium.ttf */; };
+		96174BE926A7D2A2003326CA /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96174BE326A7D2A2003326CA /* Poppins-ExtraBold.ttf */; };
+		96174BEA26A7D2A2003326CA /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96174BE426A7D2A2003326CA /* Poppins-Regular.ttf */; };
+		96174BEB26A7D2A2003326CA /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96174BE526A7D2A2003326CA /* Poppins-Bold.ttf */; };
+		96174BEC26A7D2A2003326CA /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96174BE626A7D2A2003326CA /* Poppins-SemiBold.ttf */; };
+		96174BEF26A7D906003326CA /* EmojiTypesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96174BEE26A7D906003326CA /* EmojiTypesModel.swift */; };
+		96174BF226A7EE48003326CA /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 96174BF126A7EE48003326CA /* WrappingHStack */; };
+		96174BF426A7F2E1003326CA /* EmojiDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96174BF326A7F2E1003326CA /* EmojiDataModel.swift */; };
+		96174BF726A7FFD4003326CA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96174BF626A7FFD4003326CA /* CardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96174BCE26A7D0F9003326CA /* scroll-effect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scroll-effect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96174BD126A7D0F9003326CA /* scroll_effectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scroll_effectApp.swift; sourceTree = "<group>"; };
+		96174BD326A7D0F9003326CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96174BD526A7D0FC003326CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96174BD826A7D0FC003326CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96174BDA26A7D0FC003326CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96174BE126A7D2A2003326CA /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		96174BE226A7D2A2003326CA /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		96174BE326A7D2A2003326CA /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		96174BE426A7D2A2003326CA /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		96174BE526A7D2A2003326CA /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		96174BE626A7D2A2003326CA /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		96174BEE26A7D906003326CA /* EmojiTypesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTypesModel.swift; sourceTree = "<group>"; };
+		96174BF326A7F2E1003326CA /* EmojiDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDataModel.swift; sourceTree = "<group>"; };
+		96174BF626A7FFD4003326CA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96174BCB26A7D0F9003326CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96174BF226A7EE48003326CA /* WrappingHStack in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96174BC526A7D0F9003326CA = {
+			isa = PBXGroup;
+			children = (
+				96174BD026A7D0F9003326CA /* scroll-effect */,
+				96174BCF26A7D0F9003326CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96174BCF26A7D0F9003326CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96174BCE26A7D0F9003326CA /* scroll-effect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96174BD026A7D0F9003326CA /* scroll-effect */ = {
+			isa = PBXGroup;
+			children = (
+				96174BF526A7FFB4003326CA /* Views */,
+				96174BED26A7D8CC003326CA /* Models */,
+				96174BD126A7D0F9003326CA /* scroll_effectApp.swift */,
+				96174BD326A7D0F9003326CA /* ContentView.swift */,
+				96174BE026A7D2A2003326CA /* Poppins */,
+				96174BD526A7D0FC003326CA /* Assets.xcassets */,
+				96174BDA26A7D0FC003326CA /* Info.plist */,
+				96174BD726A7D0FC003326CA /* Preview Content */,
+			);
+			path = "scroll-effect";
+			sourceTree = "<group>";
+		};
+		96174BD726A7D0FC003326CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				96174BD826A7D0FC003326CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96174BE026A7D2A2003326CA /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				96174BE126A7D2A2003326CA /* Poppins-Light.ttf */,
+				96174BE226A7D2A2003326CA /* Poppins-Medium.ttf */,
+				96174BE326A7D2A2003326CA /* Poppins-ExtraBold.ttf */,
+				96174BE426A7D2A2003326CA /* Poppins-Regular.ttf */,
+				96174BE526A7D2A2003326CA /* Poppins-Bold.ttf */,
+				96174BE626A7D2A2003326CA /* Poppins-SemiBold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		96174BED26A7D8CC003326CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96174BEE26A7D906003326CA /* EmojiTypesModel.swift */,
+				96174BF326A7F2E1003326CA /* EmojiDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96174BF526A7FFB4003326CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96174BF626A7FFD4003326CA /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96174BCD26A7D0F9003326CA /* scroll-effect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96174BDD26A7D0FC003326CA /* Build configuration list for PBXNativeTarget "scroll-effect" */;
+			buildPhases = (
+				96174BCA26A7D0F9003326CA /* Sources */,
+				96174BCB26A7D0F9003326CA /* Frameworks */,
+				96174BCC26A7D0F9003326CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "scroll-effect";
+			packageProductDependencies = (
+				96174BF126A7EE48003326CA /* WrappingHStack */,
+			);
+			productName = "scroll-effect";
+			productReference = 96174BCE26A7D0F9003326CA /* scroll-effect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96174BC626A7D0F9003326CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					96174BCD26A7D0F9003326CA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 96174BC926A7D0F9003326CA /* Build configuration list for PBXProject "scroll-effect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96174BC526A7D0F9003326CA;
+			packageReferences = (
+				96174BF026A7EE48003326CA /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
+			productRefGroup = 96174BCF26A7D0F9003326CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96174BCD26A7D0F9003326CA /* scroll-effect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96174BCC26A7D0F9003326CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96174BD926A7D0FC003326CA /* Preview Assets.xcassets in Resources */,
+				96174BE926A7D2A2003326CA /* Poppins-ExtraBold.ttf in Resources */,
+				96174BEB26A7D2A2003326CA /* Poppins-Bold.ttf in Resources */,
+				96174BE826A7D2A2003326CA /* Poppins-Medium.ttf in Resources */,
+				96174BEA26A7D2A2003326CA /* Poppins-Regular.ttf in Resources */,
+				96174BEC26A7D2A2003326CA /* Poppins-SemiBold.ttf in Resources */,
+				96174BE726A7D2A2003326CA /* Poppins-Light.ttf in Resources */,
+				96174BD626A7D0FC003326CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96174BCA26A7D0F9003326CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96174BEF26A7D906003326CA /* EmojiTypesModel.swift in Sources */,
+				96174BD426A7D0F9003326CA /* ContentView.swift in Sources */,
+				96174BF426A7F2E1003326CA /* EmojiDataModel.swift in Sources */,
+				96174BD226A7D0F9003326CA /* scroll_effectApp.swift in Sources */,
+				96174BF726A7FFD4003326CA /* CardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		96174BDB26A7D0FC003326CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96174BDC26A7D0FC003326CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96174BDE26A7D0FC003326CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"scroll-effect/Preview Content\"";
+				DEVELOPMENT_TEAM = AD9GNNLFPX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "scroll-effect/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amberjen.scroll-effect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96174BDF26A7D0FC003326CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"scroll-effect/Preview Content\"";
+				DEVELOPMENT_TEAM = AD9GNNLFPX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "scroll-effect/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amberjen.scroll-effect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96174BC926A7D0F9003326CA /* Build configuration list for PBXProject "scroll-effect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96174BDB26A7D0FC003326CA /* Debug */,
+				96174BDC26A7D0FC003326CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96174BDD26A7D0FC003326CA /* Build configuration list for PBXNativeTarget "scroll-effect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96174BDE26A7D0FC003326CA /* Debug */,
+				96174BDF26A7D0FC003326CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96174BF026A7EE48003326CA /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96174BF126A7EE48003326CA /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96174BF026A7EE48003326CA /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 96174BC626A7D0F9003326CA /* Project object */;
+}
