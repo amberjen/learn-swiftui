@@ -21,19 +21,19 @@ Documenting my journey of learning SwiftUI.
 
 ## 03 Recreate App Store Today
 
-<img src="./screenshots/03-appstore-today.gif" alt="recreate app store today">
+<img src="./screenshots/03-appstore-today.gif" alt="recreate app store today" width="160">
 
 - matchedGeometryEffect
 
 ## 04 3D Scroll Effect
 
-<img src="./screenshots/04-3d-scroll-effect.gif" alt="3d scroll effect">
+<img src="./screenshots/04-3d-scroll-effect.gif" alt="3d scroll effect" width="160">
 
 - GeometryReader, rotation3DEffect
 - Swift Package: [WrappingHStack](https://github.com/dkk/WrappingHStack)
 - Custom fonts: Google Font - Poppins
 - Background image source: Unsplash
-- Inspired by [Emojipedia](https://emojipedia.org/)
+- Data source: [Emojipedia](https://emojipedia.org/)
 
 
 
