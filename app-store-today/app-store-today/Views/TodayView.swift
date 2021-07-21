@@ -12,7 +12,7 @@ struct TodayView: View {
     @Namespace private var cardAnimation
     @State private var showDetailed: Bool = false
     
-    @State var selectedCard: CardModel = cards[0]
+    @State private var selectedCard: CardModel = cards[0]
     
     var body: some View {
         
@@ -32,6 +32,7 @@ struct TodayView: View {
                                     id: selectedCard.id,
                                     in: cardAnimation
                                 )
+                                .padding(.bottom, 15)
                            
                             
                             // App List
@@ -48,51 +49,79 @@ struct TodayView: View {
                                             .frame(width: 64, height: 64)
                                         
                                         // Content
-                                        HStack {
-                                            VStack(alignment: .leading) {
-                                                Text(app.title)
-                                                    .font(.title2)
+                                        VStack {
+                                            HStack {
+                                                VStack(alignment: .leading) {
+                                                    Text(app.title)
+                                                        .font(.title2)
+                                                    
+                                                    
+                                                    Text(app.subtitle)
+                                                        .foregroundColor(.gray)
+                                                }
                                                 
+                                                Spacer()
                                                 
-                                                Text(app.subtitle)
-                                                    .foregroundColor(.gray)
+                                                Button(action: {
+                                                    
+                                                }, label: {
+                                                    Text(app.btnText.uppercased())
+                                                        .font(.headline)
+                                                        .fontWeight(.bold)
+                                                        .padding(.vertical, 7)
+                                                        .padding(.horizontal, 20)
+                                                        .background(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
+                                                        .cornerRadius(25)
+                                                })
+                                                
                                             }
                                             
-                                            Spacer()
+                                            Divider()
                                             
-                                            Button(action: {
-                                                
-                                            }, label: {
-                                                Text(app.btnText.uppercased())
-                                                    .font(.title3)
-                                                    .fontWeight(.bold)
-                                                    .padding(.vertical, 7)
-                                                    .padding(.horizontal, 20)
-                                                    .background(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)))
-                                                    .cornerRadius(25)
-                                            })
-                                        }
-                                        .frame(maxWidth: .infinity)
+                                        } // END: App Item: Content
+                                        .padding(.leading, 5)
                                         
                                     } // END: App Item
+                                    .padding(.bottom, 5)
+                                    
                                     
                                 } // END: VStack
                                 .padding(.horizontal, 16)
                                 
                             } // END: ForEach
-
+                            
+                            
+                            Button(action: {}, label: {
+                                
+                                HStack {
+                                    Image(systemName: "square.and.arrow.up")
+                                    Text("Share Story")
+                                    
+                                }
+                                
+                                
+                            })
+                            .padding(.top, 25)
+                            .padding(.bottom, 120)
 
                         }
                         
                         
                         
                     } // END: VStack
+                    .matchedGeometryEffect(
+                        id: "container\(selectedCard.id)",
+                        in: cardAnimation
+                    )
 
                     CloseButton()
                         .onTapGesture {
-                            showDetailed.toggle()
+                            withAnimation(.spring()) {
+                                showDetailed.toggle()
+                            }
+                            
                         }
-                        .padding(.top, 24)
+                        .padding(.top, 48)
                         .padding(.trailing, 16)
 
                 } // END: ZStack
@@ -136,16 +165,25 @@ struct TodayView: View {
                 
                     ForEach(cards) { card in
                         
-                        CardItemView(card: card, isDetailView: false)
-                            .matchedGeometryEffect(
-                                id: card.id,
-                                in: cardAnimation)
-                            .onTapGesture {
-                                withAnimation {
-                                    selectedCard = card
-                                    showDetailed.toggle()
+                        VStack {
+                            
+                            CardItemView(card: card, isDetailView: false)
+                                .matchedGeometryEffect(
+                                    id: card.id,
+                                    in: cardAnimation)
+                                .onTapGesture {
+                                    withAnimation(.spring(response: 0.5, dampingFraction: 0.7, blendDuration: 0)) {
+                                        selectedCard = card
+                                        showDetailed.toggle()
+                                    }
                                 }
-                        }
+                        }.matchedGeometryEffect(
+                            id: "container\(card.id)",
+                            in: cardAnimation
+                        )
+                        
+                        
+                        
                             
                         
                     

@@ -8,18 +8,15 @@
 import SwiftUI
 
 struct CloseButton: View {
+    
     var body: some View {
         
-        Button(action: {
-            
-        }, label: {
-            Image(systemName: "xmark")
-                .font(.system(size: 18, weight: .bold))
-                .foregroundColor(.white)
-                .padding(12)
-                .background(Color.black.opacity(0.6))
-                .clipShape(Circle())
-        })
+        Image(systemName: "xmark")
+            .font(.system(size: 18, weight: .bold))
+            .foregroundColor(.white)
+            .padding(12)
+            .background(Color.black.opacity(0.6))
+            .clipShape(Circle())
         
     }
 }
