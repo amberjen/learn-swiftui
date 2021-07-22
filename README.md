@@ -35,7 +35,12 @@ Documenting my journey of learning SwiftUI.
 - Background image source: Unsplash
 - Data source: [Emojipedia](https://emojipedia.org/)
 
+## 05 Notification Banner
 
+<img src="./screenshots/05-notification-banner.gif" alt="notification banner" width="160">
+
+- ViewModifier
+- Icons: [Phosphor Icons](https://phosphoricons.com/)
 
 
 
