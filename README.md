@@ -42,6 +42,14 @@ Documenting my journey of learning SwiftUI.
 - ViewModifier
 - Icons: [Phosphor Icons](https://phosphoricons.com/)
 
+## 06 Widget
 
+<img src="./screenshots/06-tex-widget.png" alt="widget" width="600">
+
+- WidgetKit
+- Icons: [Google Material Icons](https://fonts.google.com/icons)
+- Logo & background image:
+  * I do not own these images. All copyrights belong to [Taiwan High Speed Rail Corporation](https://www.thsrc.com.tw).
+  * No copyright infringement intended.
 
 
