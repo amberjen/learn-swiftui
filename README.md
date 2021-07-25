@@ -44,7 +44,7 @@ Documenting my journey of learning SwiftUI.
 
 ## 06 Widget
 
-<img src="./screenshots/06-tex-widget.png" alt="widget" width="600">
+<img src="./screenshots/06-tex-widget.png" alt="widget" width="520">
 
 #### A concept demonstrating the use of widgets for the T-EX App.
 
