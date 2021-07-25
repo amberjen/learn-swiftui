@@ -46,10 +46,9 @@ Documenting my journey of learning SwiftUI.
 
 <img src="./screenshots/06-tex-widget.png" alt="widget" width="600">
 
+#### A concept demonstrating the use of widgets for the T-EX App.
+
 - WidgetKit
-- Icons: [Google Material Icons](https://fonts.google.com/icons)
-- Logo & background image:
-  * I do not own these images. All copyrights belong to [Taiwan High Speed Rail Corporation](https://www.thsrc.com.tw).
-  * No copyright infringement intended.
+- Icons: Google Material Icons
 
 
