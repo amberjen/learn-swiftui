@@ -8,7 +8,6 @@ Documenting my journey of learning SwiftUI.
 - SF Symbols
 - @State, @Binding
 - Toggle drak/light theme
-- Credit & inspiration: Apple Stocks, Sean Allen
 
 
 ## 02 Podcasts for Designers 👩‍🎨🎨
@@ -32,7 +31,6 @@ Documenting my journey of learning SwiftUI.
 - GeometryReader, rotation3DEffect
 - Swift Package: [WrappingHStack](https://github.com/dkk/WrappingHStack)
 - Custom fonts: Google Font - Poppins
-- Background image source: Unsplash
 - Data source: [Emojipedia](https://emojipedia.org/)
 
 ## 05 Notification Banner
@@ -40,15 +38,14 @@ Documenting my journey of learning SwiftUI.
 <img src="./screenshots/05-notification-banner.gif" alt="notification banner" width="160">
 
 - ViewModifier
-- Icons: [Phosphor Icons](https://phosphoricons.com/)
 
 ## 06 Widget
 
-<img src="./screenshots/06-tex-widget.png" alt="widget" width="520">
+<img src="./screenshots/06-tex-widget-v2.png" alt="widget" width="320">
 
 #### A concept demonstrating the use of widgets for the T-EX App.
 
 - WidgetKit
-- Icons: Google Material Icons
+- GeometryReader
 
 
