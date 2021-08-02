@@ -48,4 +48,5 @@ Documenting my journey of learning SwiftUI.
 - WidgetKit
 - GeometryReader
 
-
+## 07 Movie Rating
+<img src="./screenshots/07-movie-rating.png" alt="movie rating ui" width="680">
