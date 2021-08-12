@@ -50,3 +50,6 @@ Documenting my journey of learning SwiftUI.
 
 ## 07 Movie Rating
 <img src="./screenshots/07-movie-rating.png" alt="movie rating ui" width="680">
+
+## 08 watchOS Basic
+<img src="./screenshots/08-watchos-basic.png" alt="Apple wathOS basic" width="430">
